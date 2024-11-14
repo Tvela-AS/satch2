@@ -2,6 +2,8 @@ import exp from "constants";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 
+import schemas from "./sanity/schemas";
+
 const config = defineConfig({
   projectId: "hwqw748q",
 
@@ -14,6 +16,8 @@ const config = defineConfig({
   basePath: "/admin",
 
   plugins: [deskTool()],
+
+  schema: { types: schemas },
 });
 
 export default config;
