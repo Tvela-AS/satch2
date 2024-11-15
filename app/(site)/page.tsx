@@ -6,7 +6,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div className='max-w-5xl mx-auto py-20'>
+    <div>
       <h1 className='text-7xl font-extrabold '>Satch Valdres</h1>
       <p className='mt-3 text-xl text-gray-600'>
         Dette er en test for å vise hvordan systemet fungerer
