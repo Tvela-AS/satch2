@@ -37,7 +37,7 @@ const Navbar = async () => {
           height={100}
         />
       </Link>
-      <div className='flex flex-1 items-center justify-end h-full p-4 md:p-0 gap-3 text-sm -bg-red-700 text-gray-600'>
+      <div className='flex flex-1 items-center justify-end h-full p-4 md:p-0 gap-3 text-xl -bg-red-700 text-gray-600'>
         {sortedPages.map((page, idx) => (
           <Link key={idx} href={`/${page.slug}`} className='hover:underline'>
             {page.title}

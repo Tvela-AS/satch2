@@ -27,13 +27,13 @@ export default async function Project({ params }: Props) {
       </header>
 
       {/* images goes here */}
-      <div className='flex items-center justify-between '>
+      <div className='flex flex-col items-center justify-between '>
         <Image
           src={project.image}
           alt={project.name}
           width={920}
           height={680}
-          className='mt-10 object-cover rounded-xl px-6'
+          className='mt-10 -bg-blue-600 object-cover rounded-xl px-40'
         />
 
         {/* content goes here */}
