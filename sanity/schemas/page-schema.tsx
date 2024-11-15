@@ -25,6 +25,20 @@ const page = {
       type: "array",
       of: [{ type: "block" }],
     },
+    {
+      name: "jpgImage",
+      type: "image",
+      options: {
+        accept: "image/jpeg",
+      },
+    },
+    {
+      name: "pngImage",
+      type: "image",
+      options: {
+        accept: "image/png",
+      },
+    },
   ],
 };
 

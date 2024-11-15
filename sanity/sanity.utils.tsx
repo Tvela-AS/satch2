@@ -46,7 +46,9 @@ export async function getPages(): Promise<Page[]> {
     _id,
     _createdAt,
     title,
-    "slug": slug.current
+    "slug": slug.current,
+    pngImage,
+    jpgImage
     }`
   );
 }
@@ -58,7 +60,9 @@ export async function getPage(slug: string): Promise<Page[]> {
     _createdAt,
     title,
     "slug": slug.current,
-    content
+    content,
+    pngImage,
+    jpgImage
     }`,
     { slug }
   );

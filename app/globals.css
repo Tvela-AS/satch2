@@ -15,7 +15,16 @@
 }
 
 body {
+  height: 100%;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+body > div:first-child,
+div#next,
+div#next > div {
+  height: 100%;
 }

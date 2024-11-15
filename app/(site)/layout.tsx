@@ -57,7 +57,7 @@ export default async function RootLayout({
   const pages = await getPages();
   return (
     <html lang='en'>
-      <body className='max-w-3xl mx-auto md:py-10'>
+      <body className='max-w-3xl -bg-green-400 mx-auto md:py-10'>
         <Navbar />
 
         <main className='py-20 p-4 md:p-0 -bg-blue-400 '>{children}</main>
