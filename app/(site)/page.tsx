@@ -2,12 +2,15 @@ import { getProjects } from "@/sanity/sanity.utils";
 import Image from "next/image";
 import Link from "next/link";
 
+const ImageLink = "/satchlogo.png";
+
 export default async function Home() {
   const projects = await getProjects();
 
   return (
     <div>
-      <h1 className='text-7xl font-extrabold '>Satch Valdres</h1>
+      <Image src={ImageLink} alt='' width={1500} height={100} />
+      {/* <h1 className='text-7xl font-extrabold '>Satch Valdres</h1> */}
       <p className='mt-3 text-xl text-gray-600'>
         Dette er en test for å vise hvordan systemet fungerer
       </p>
