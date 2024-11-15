@@ -25,6 +25,7 @@ export const metadata: Metadata = {
 
 const Navbar = async () => {
   const pages = await getPages();
+  const sortedPages = pages.sort((a, b) => (a.id < b.id ? 1 : -1));
   return (
     <header className='flex items-center justify-between -bg-green-600 p-0 m-0 md:p-4'>
       <Link href='/' className='-bg-pink-500'>
@@ -36,8 +37,8 @@ const Navbar = async () => {
           height={100}
         />
       </Link>
-      <div className='flex flex-1 items-center justify-end md:justify-start h-full p-4 md:p-0 gap-3 text-sm -bg-red-700 text-gray-600'>
-        {pages.map((page, idx) => (
+      <div className='flex flex-1 items-center justify-end h-full p-4 md:p-0 gap-3 text-sm -bg-red-700 text-gray-600'>
+        {sortedPages.map((page, idx) => (
           <Link key={idx} href={`/${page.slug}`} className='hover:underline'>
             {page.title}
           </Link>
