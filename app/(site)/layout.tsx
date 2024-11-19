@@ -39,14 +39,19 @@ const Navbar = async () => {
       </Link>
       <div className='flex flex-1 items-center justify-end h-full p-4 md:p-0 gap-3 text-xl -bg-red-700 text-gray-600'>
         {sortedPages.map((page, idx) => (
-          <Link key={idx} href={`/${page.slug}`} className='hover:underline'>
+          <Link
+            key={idx}
+            href={`/${page.slug}`}
+            className='hover:scale-105 transition'>
             {page.title}
           </Link>
         ))}
         <Link
           href={"https://bestill.timma.no/valdreshundesalong"}
           target='no_refferer'>
-          <button className='bg-green-200 rounded-full p-1'>Book time</button>
+          <button className='bg-green-200 rounded-full p-1 hover:scale-105 hover:bg-blue-400 transition'>
+            Book time
+          </button>
         </Link>
       </div>
     </header>

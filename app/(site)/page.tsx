@@ -88,6 +88,11 @@ export default async function Home() {
           />
         </div>
       </div>
+      <footer className='w-full'>
+        <i className='fa fa-copyright text-center' aria-hidden='true'>
+          Copyright 2024 Valdrs Hundesalong | Webdesign by Jotun Utvikling AS
+        </i>
+      </footer>
     </div>
   );
 }
