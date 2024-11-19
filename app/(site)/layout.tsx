@@ -49,7 +49,7 @@ const Navbar = async () => {
         <Link
           href={"https://bestill.timma.no/valdreshundesalong"}
           target='no_refferer'>
-          <button className='bg-green-200 rounded-full p-1 hover:scale-105 hover:bg-blue-400 transition'>
+          <button className='bg-green-200 rounded-full p-1 hover:scale-105 hover:bg-green-100 transition'>
             Book time
           </button>
         </Link>
