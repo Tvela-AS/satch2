@@ -43,6 +43,7 @@ const Navbar = async () => {
             {page.title}
           </Link>
         ))}
+        <button className='bg-green-200 rounded-full p-1'>Book time</button>
       </div>
     </header>
   );

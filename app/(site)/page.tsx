@@ -12,11 +12,19 @@ export default async function Home() {
       <Image src={ImageLink} alt='' width={1500} height={100} />
       {/* <h1 className='text-7xl font-extrabold '>Satch Valdres</h1> */}
       <p className='mt-3 text-xl text-gray-600'>
-        Dette er en test for å vise hvordan systemet fungerer
+        Satch Valdres eies og drives av Lillian Randby. Butikken & Salongen ble
+        offisielt åpnet 6 desember 2023.
+      </p>
+      <p className='mt-3 text-xl text-gray-600'>
+        I butikken tilbyr vi et godt utvalg av utstyr, leker og fòr til dine
+        4-beinte venner, og i salongen tar vi oss godt av vask, stell og klipp
+        av hunder og katter i alle raser og størrelser.
       </p>
 
-      <h2 className='mt-24 font-bold text-gray-700 text-3xl'>Diverse sider</h2>
-      <div className='mt-5 grid md:grid-cols-2 lg:grid-cols3 gap-8'>
+      <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
+        Et utvalg av våre tjenester
+      </h2>
+      <div className='mt-5 mb-5 grid md:grid-cols-2 lg:grid-cols3 gap-8'>
         {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
@@ -37,6 +45,48 @@ export default async function Home() {
             </div>
           </Link>
         ))}
+      </div>
+      <div>
+        <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
+          Samarbeidspartnere på fòr og utstyr
+        </h2>
+        <div className='mt-5 mb-5 grid md:grid-cols-5 lg:grid-cols3 gap-8'>
+          <Image
+            src={"/eukanuba.png"}
+            alt={"Eukanubalogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
+            src={"/farmina.png"}
+            alt={"Farminalogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
+            src={"/provit.png"}
+            alt={"Provitlogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
+            src={"/vom.png"}
+            alt={"Vomlogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
+            src={"/nonstop.png"}
+            alt={"Nonstoplogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+        </div>
       </div>
     </div>
   );
