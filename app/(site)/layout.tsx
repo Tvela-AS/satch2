@@ -43,7 +43,11 @@ const Navbar = async () => {
             {page.title}
           </Link>
         ))}
-        <button className='bg-green-200 rounded-full p-1'>Book time</button>
+        <Link
+          href={"https://bestill.timma.no/valdreshundesalong"}
+          target='no_refferer'>
+          <button className='bg-green-200 rounded-full p-1'>Book time</button>
+        </Link>
       </div>
     </header>
   );
