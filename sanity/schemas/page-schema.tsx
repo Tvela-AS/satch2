@@ -1,5 +1,3 @@
-import { kMaxLength } from "buffer";
-
 const page = {
   name: "page",
   title: "Pages",
@@ -26,17 +24,10 @@ const page = {
       of: [{ type: "block" }],
     },
     {
-      name: "jpgImage",
+      name: "image",
       type: "image",
       options: {
-        accept: "image/jpeg",
-      },
-    },
-    {
-      name: "pngImage",
-      type: "image",
-      options: {
-        accept: "image/png",
+        accept: ["image/jpeg", "image/png"],
       },
     },
   ],
