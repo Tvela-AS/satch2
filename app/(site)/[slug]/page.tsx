@@ -5,20 +5,23 @@ import { getPage } from "@/sanity/sanity.utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
-type Props = {
-  params: { slug: string };
-};
-
-export default async function Page({ params }: Props) {
-  const page = await getPage(params.slug);
-  const { image } = page;
-  const imageLink = urlFor(image).width(2000).height(2000).url();
+export default async function Page({ params }: any) {
+  const page: { title: string; content: unknown; image: unknown } =
+    (await getPage(params?.slug || "")) as unknown as {
+      title: string;
+      content: any;
+      image: unknown;
+    };
+  const imageLink = urlFor(page?.image || "")
+    .width(2000)
+    .height(2000)
+    .url();
 
   return (
     <div className=''>
       <div className='-bg-blue-500 h-full flex flex-col'>
         <h1 className='bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold mx-auto'>
-          {page.title}
+          {page?.title}
         </h1>
         <div className=' py-2 relative rounded-lg md:w-full   -bg-blue'>
           <Image
@@ -32,7 +35,10 @@ export default async function Page({ params }: Props) {
         </div>
       </div>
       <div className='text-lg text-gray-700 mt-100 prose-lg prose-h2:max-w-[32ch] prose-h2:text-5xl whitespace-pre-line -bg-blue-200'>
-        <PortableText value={page?.content} components={RichTextComponents} />
+        <PortableText
+          value={(page?.content as any) || []}
+          components={RichTextComponents}
+        />
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 "use client";
 // src/components/Map.tsx
-import { MapContainer, Marker, TileLayer, Tooltip } from "react-leaflet";
+import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import dynamic from "next/dynamic";
 
-function MyMap(props: any) {
+function MyMap(props) {
   const { position, zoom } = props;
 
   return (

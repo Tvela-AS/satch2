@@ -1,6 +1,6 @@
-import * as dotenv from "dotenv";
+// import * as dotenv from "dotenv";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "../globals.css";
 import Link from "next/link";
 import { getPages } from "@/sanity/sanity.utils";
@@ -8,16 +8,16 @@ import Image from "next/image";
 
 const headerImageLink = "/Satch.png";
 
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "../fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "../fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Satch Valdres",
@@ -68,7 +68,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   // Get Pages
-  const pages = await getPages();
+  // const pages = await getPages();
   return (
     <html lang='en'>
       <body className='max-w-3xl -bg-green-400 mx-auto md:py-10'>

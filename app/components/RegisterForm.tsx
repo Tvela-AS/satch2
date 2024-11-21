@@ -53,8 +53,8 @@ const FormField: React.FC<FormFieldProps> = ({
   </>
 );
 
-type RegisterFormProps = {};
-const RegisterForm = ({}: RegisterFormProps) => {
+// type RegisterFormProps = {};
+const RegisterForm = ({}) => {
   const [successMessage, setSuccessMessage] = useState<null | string>(null);
   const customSubmit = async (vals: FormData) => {
     try {
@@ -146,7 +146,7 @@ const RegisterForm = ({}: RegisterFormProps) => {
             <button
               // onClick={handleSubmit(onSubmit)}
               type='submit'
-              className='submit-button w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-green-200 hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-black md:text-xl'>
+              className='submit-button w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium  bg-green-200 hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-black md:text-xl'>
               Send melding
             </button>
           </>

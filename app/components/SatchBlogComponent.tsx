@@ -1,44 +1,8 @@
 // `components` object you'll pass to PortableText
-
 import Link from "next/link";
 
 // `components` object you'll pass to PortableText
-export const RichTextComponents = {
-  types: {
-    image: ({ value, isInline }) => {
-      const { width, height } = getImageDimensions(value);
-      return (
-        <img
-          src={imageBuilder.image(value).url()}
-          alt={value.alt || " "}
-          loading='lazy'
-          className={`my-8 mx-auto ${
-            isInline ? "max-w-xs" : "max-w-full"
-          } rounded-lg shadow-lg`}
-          style={{ aspectRatio: width / height }}
-        />
-      );
-    },
-  },
-
-  block: {
-    // Ex. 1: customizing common block types
-    h1: ({ children }) => (
-      <h1 className='text-2xl text-red-400 whitespace-pre-line'>{children}</h1>
-    ),
-    blockquote: ({ children }) => (
-      <blockquote className='border-l-purple-500 whitespace-pre-line'>
-        {children}
-      </blockquote>
-    ),
-
-    // Ex. 2: rendering custom styles
-    customHeading: ({ children }) => (
-      <h2 className='text-lg text-primary text-purple-700 whitespace-pre-line'>
-        {children}
-      </h2>
-    ),
-  },
+export const RichTextComponents: any = {
   block: {
     h1: ({ children }) => (
       <h1 className='text-4xl font-bold my-4 whitespace-pre-line'>

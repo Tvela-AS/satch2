@@ -2,23 +2,21 @@
 // ES6
 // import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import classes from "../map.module.css";
-import ReactMapGl, { NavigationControl, GeolocateControl } from "react-map-gl";
-import { PiDog } from "react-icons/pi";
 
 import React, { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import dynamic from "next/dist/shared/lib/dynamic";
 
-type ValdressMapProps = {};
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_REACT_APP_MAPBOX_ACCESS_TOKEN;
-const ValdressMap = ({}: ValdressMapProps) => {
+// type ValdressMapProps = {};
+mapboxgl.accessToken =
+  process.env.NEXT_PUBLIC_REACT_APP_MAPBOX_ACCESS_TOKEN ?? "";
+const ValdressMap = ({}) => {
   const mapContainerRef = useRef(null);
 
   useEffect(() => {
     // Initialize the map
     const map = new mapboxgl.Map({
-      container: mapContainerRef?.current!,
+      container: mapContainerRef?.current || "",
       style: "mapbox://styles/mapbox/satellite-v9",
 
       center: [9.23105, 60.985451], // Initial position [lng, lat]
@@ -81,11 +79,12 @@ const ValdressMap = ({}: ValdressMapProps) => {
 
 // LAT: 60.985450 LONG: 9.231050 - Valdresvegen 12 Fagernes
 
-export default ValdressMap;
 export const DynamicValdressMap = dynamic(
   Promise.resolve(() => {
     // Component implementation
     return <ValdressMap />;
   }),
-  { ssr: false }
+  { ssr: true }
 );
+
+export default ValdressMap;
