@@ -1,9 +1,10 @@
 import exp from "constants";
 import { defineConfig } from "sanity";
+import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
 
 import schemas from "./sanity/schemas";
 
-const config = defineConfig({
+export default defineConfig({
   projectId: "hwqw748q",
 
   dataset: "satch_data",
@@ -14,9 +15,7 @@ const config = defineConfig({
 
   basePath: "/admin",
 
-  // plugins: [deskTool()],
+  plugins: [vercelDeployTool()],
 
   schema: { types: schemas },
 });
-
-export default config;
