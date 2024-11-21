@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "createdAt": "2024-11-21T11:18:52.069Z",
+  "workspaces": [
+    {
+      "name": "default",
+      "title": "Satch Valdres",
+      "basePath": "/admin",
+      "dataset": "satch_data",
+      "schema": "2d7c25bb.create-schema.json"
+    }
+  ]
+}
