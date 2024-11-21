@@ -119,7 +119,7 @@ const RegisterForm = ({}: RegisterFormProps) => {
             <Label>Fornavn:</Label>
             <FormField
               type='text'
-              placeholder='Gi Oss ditt beste navn'
+              placeholder='Fornavn'
               name='firstName'
               register={register}
               error={errors.firstName}
@@ -128,7 +128,7 @@ const RegisterForm = ({}: RegisterFormProps) => {
             <Label>Etternavn:</Label>
             <FormField
               type='text'
-              placeholder='Gi Oss ditt beste navn'
+              placeholder='Etternavn'
               name='lastName'
               register={register}
               error={errors.lastName}

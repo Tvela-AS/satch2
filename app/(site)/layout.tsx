@@ -47,7 +47,9 @@ const Navbar = async () => {
             {page.title}
           </Link>
         ))}
-
+        <Link href={"/kontakt-oss"} className='hover:scale-105 transition'>
+          Ta Kontakt
+        </Link>
         <Link
           href={"https://bestill.timma.no/valdreshundesalong"}
           target='no_refferer'>
