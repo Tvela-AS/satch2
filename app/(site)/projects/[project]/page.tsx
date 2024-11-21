@@ -1,8 +1,4 @@
-import BlockContent from "@sanity/block-content-to-react";
-import {
-  SatchPortableText,
-  serializers,
-} from "@/app/components/SatchBlogComponent";
+import { RichTextComponents } from "@/app/components/SatchBlogComponent";
 import { getProject } from "@/sanity/sanity.utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
@@ -45,7 +41,7 @@ export default async function Project({ params }: Props) {
         <div className='text-lg text-gray-700 mt-5'>
           <PortableText
             value={project.content}
-            components={SatchPortableText}
+            components={RichTextComponents}
           />
         </div>
       </div>

@@ -1,3 +1,4 @@
+import * as dotenv from "dotenv";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
@@ -46,6 +47,7 @@ const Navbar = async () => {
             {page.title}
           </Link>
         ))}
+
         <Link
           href={"https://bestill.timma.no/valdreshundesalong"}
           target='no_refferer'>

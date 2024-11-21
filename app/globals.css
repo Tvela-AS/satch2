@@ -28,3 +28,7 @@ div#next,
 div#next > div {
   height: 100%;
 }
+
+* {
+  white-space: pre-line;
+}

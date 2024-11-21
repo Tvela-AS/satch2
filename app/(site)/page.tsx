@@ -6,6 +6,8 @@ const ImageLink = "/satchlogo.png";
 
 export default async function Home() {
   const projects = await getProjects();
+  const thisYear = new Date().getFullYear();
+  console.log(thisYear);
 
   return (
     <div>
@@ -50,7 +52,7 @@ export default async function Home() {
         <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
           Samarbeidspartnere på fòr og utstyr
         </h2>
-        <div className='mt-5 mb-5 grid md:grid-cols-5 lg:grid-cols3 gap-8'>
+        <div className='mt-5 mb-5 grid md:grid-cols-5 lg:grid-cols3 gap-8 items-center  justify-center md:justify-start'>
           <Image
             src={"/eukanuba.png"}
             alt={"Eukanubalogo"}
@@ -88,9 +90,10 @@ export default async function Home() {
           />
         </div>
       </div>
-      <footer className='w-full'>
-        <i className='fa fa-copyright text-center' aria-hidden='true'>
-          Copyright 2024 Valdrs Hundesalong | Webdesign by Jotun Utvikling AS
+      <footer className='w-full my-10  text-center'>
+        <i className='fa fa-copyright text-center ' aria-hidden='true'>
+          Copyright {thisYear.toString()} Valdres Hundesalong | Built with ❤️ by
+          Jotun Utvikling AS
         </i>
       </footer>
     </div>
