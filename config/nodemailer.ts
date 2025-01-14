@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   //secure: false,
   auth: {
-    user: "jotunutviklingnorge@gmail.com",
-    pass: "562_SOLhatt!",
+    user: process.env.REACT_APP_USER,
+    pass: process.env.REACT_APP_MAIL_PASSWORD,
   },
 });
 
@@ -60,8 +60,8 @@ Husk å fakturer!=)
 
   const SatchMailOptions = {
     // from: "jotunutvikling@gmail.com]",
-    from: "hei@jotun-utvikling.no",
-    to: "post@jornlarsen.no",
+    from: "post@valdreshundesalong.no",
+    to: "post@valdreshundesalong.no",
     subject: `Psst! Noen på siden din vil ha tak i deg`,
     html: SatchMailHtml,
   };
@@ -73,8 +73,8 @@ Husk å fakturer!=)
   };
 
   const JotunMailOptions = {
-    from: "bot@jornlarsen.no",
-    to: ["post@jornlarsen.no"],
+    from: "post@jornlarsen.no",
+    to: ["hei@jotun-utvikling.no"],
     subject: "Bekreftelse på henvendelse mottatt",
     html: JotunMailHtml,
   };
