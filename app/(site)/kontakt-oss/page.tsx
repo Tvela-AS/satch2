@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-async-client-component */
 "use client";
 
-import RegisterForm from "@/app/components/RegisterForm";
 import dynamic from "next/dynamic";
 
 // import { DynamicMap } from "@/app/components/Map";
