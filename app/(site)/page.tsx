@@ -52,7 +52,7 @@ export default async function Home() {
         <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
           Samarbeidspartnere på fòr og utstyr
         </h2>
-        <div className='mt-5 mb-5 grid md:grid-cols-5 lg:grid-cols3 gap-8 items-center  justify-center md:justify-start'>
+        <div className='mt-5 mb-5 grid md:grid-cols-4 lg:grid-cols3 gap-8 items-center  justify-center md:justify-start'>
           <Image
             src={"/eukanuba.png"}
             alt={"Eukanubalogo"}
@@ -75,7 +75,28 @@ export default async function Home() {
             className='object-cover rounded-lg border border-gray-50'
           />
           <Image
+            src={"/kingsmoor.jpg"}
+            alt={"Kingsmoorlogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
             src={"/vom.png"}
+            alt={"Vomlogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
+            src={"/hurttalogovitbg.jpg"}
+            alt={"Hurttalogo"}
+            width={180}
+            height={30}
+            className='object-cover rounded-lg border border-gray-50'
+          />
+          <Image
+            src={"/kong.png"}
             alt={"Vomlogo"}
             width={180}
             height={30}
