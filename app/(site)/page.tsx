@@ -23,7 +23,7 @@ export default async function Home() {
         av hunder og katter i alle raser og størrelser.
       </p>
 
-      <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
+      <h2 className='mt-24 text-center font-bold text-gray-700 text-3xl'>
         Et utvalg av våre tjenester
       </h2>
       <div className='mt-5 mb-5 grid md:grid-cols-2 lg:grid-cols3 gap-8'>
@@ -49,7 +49,7 @@ export default async function Home() {
         ))}
       </div>
       <div>
-        <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
+        <h2 className='mt-24 text-center font-bold text-gray-700 text-3xl'>
           Samarbeidspartnere på fòr og utstyr
         </h2>
         <div className='mt-5 mb-5 grid md:grid-cols-4 lg:grid-cols3 gap-8 items-center  justify-center md:justify-start'>
@@ -58,56 +58,56 @@ export default async function Home() {
             alt={"Eukanubalogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/farmina.png"}
             alt={"Farminalogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/provit.png"}
             alt={"Provitlogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/kingsmoor.jpg"}
             alt={"Kingsmoorlogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/vom.png"}
             alt={"Vomlogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/hurttalogovitbg.jpg"}
             alt={"Hurttalogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/kong.png"}
             alt={"Vomlogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
           <Image
             src={"/nonstop.png"}
             alt={"Nonstoplogo"}
             width={180}
             height={30}
-            className='object-cover rounded-lg border border-gray-50'
+            className='object-cover rounded-lg border border-gray-50 hover:scale-110'
           />
         </div>
       </div>
