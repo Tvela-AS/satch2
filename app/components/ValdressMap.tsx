@@ -64,13 +64,30 @@ const ValdressMap = ({}) => {
   return (
     <div className=''>
       <div className='text prose'>
-        <h3>Kontakt oss</h3>
+        <h3 className='mt-24 font-bold text-gray-700 text-3xl'>Kontakt oss</h3>
+        <span>
+          {" "}
+          <br />
+        </span>
         <span className='font-bold'>E-post: </span>
         post@valdreshundesalong.no <br />
+        <span>
+          {" "}
+          <br />
+        </span>
         <span className='font-bold'>Telefon:</span> 973 00 380 <br />
+        <span>
+          {" "}
+          <br />
+        </span>
         <span className='font-bold'>Adresse:</span> Valdresvegen 12, 2900
         Fagernes <br />
+        <span>
+          {" "}
+          <br />
+        </span>
       </div>
+
       <div ref={mapContainerRef} className='h-96 w-full rounded-lg' />
     </div>
   );
