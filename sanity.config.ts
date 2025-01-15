@@ -1,5 +1,6 @@
 import exp from "constants";
 import { defineConfig } from "sanity";
+import { deskTool } from "sanity/desk";
 import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
 
 import schemas from "./sanity/schemas";
@@ -15,7 +16,7 @@ export default defineConfig({
 
   basePath: "/admin",
 
-  plugins: [vercelDeployTool()],
+  plugins: [deskTool()],
 
   schema: { types: schemas },
 });

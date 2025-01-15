@@ -30,7 +30,7 @@
     "react-map-gl": "^7.1.7",
     "react-mapbox-gl": "^5.1.1",
     "react-portable-text": "^0.6.0",
-    "sanity": "^3.64.1",
+    "sanity": "^3.70.0",
     "sanity-plugin-vercel-deploy": "^3.3.4",
     "styled-components": "^6.1.13",
     "zod": "^3.23.8"
