@@ -63,7 +63,7 @@ const Navbar = async () => {
           href='https://www.facebook.com/profile.php?id=100077226592929'
           className='-bg-pink-500 hover:scale-105'>
           <Image
-            className='max-w-[65px] md:max-w-auto p-2 md:p-0'
+            className='max-w-[55px] md:max-w-auto p-2 md:p-0'
             src={facebookImage}
             alt=''
             width={100}
