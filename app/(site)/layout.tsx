@@ -7,7 +7,7 @@ import { getPages } from "@/sanity/sanity.utils";
 import Image from "next/image";
 
 const headerImageLink = "/Satch.png";
-const facebookImage = "/facebook.png";
+const facebookImage = "/Facebook_Logo_2023.png";
 const instagramImage = "/instagram.png";
 
 // const geistSans = localFont({

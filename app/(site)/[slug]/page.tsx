@@ -20,7 +20,7 @@ export default async function Page({ params }: any) {
   return (
     <div className=''>
       <div className='-bg-blue-500 h-full flex flex-col'>
-        <h1 className='bg-black text-5xl drop-shadow font-extrabold mx-auto'>
+        <h1 className='text-black text-5xl drop-shadow font-extrabold mx-auto'>
           {page?.title}
         </h1>
         <div className=' py-2 relative rounded-lg md:w-full   -bg-blue'>
