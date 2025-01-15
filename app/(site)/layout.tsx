@@ -50,7 +50,7 @@ const Navbar = async () => {
           </Link>
         ))}
         <Link href={"/kontakt-oss"} className='hover:scale-105 transition'>
-          Ta Kontakt
+          Ta kontakt
         </Link>
         <Link
           href={"https://bestill.timma.no/valdreshundesalong"}
