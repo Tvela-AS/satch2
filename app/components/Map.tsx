@@ -17,7 +17,7 @@ function MyMap(props) {
       />
       <Marker position={position}>
         {/* <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          A pretty CSS3 . <br /> Easily customizable.
         </Popup> */}
       </Marker>
     </MapContainer>
