@@ -24,7 +24,7 @@ export default async function Home() {
       </p>
 
       <h2 className='mt-24 font-bold text-gray-700 text-3xl'>
-        Et utvalg av våre tjenester
+        Et utvalg av tjenestene våre
       </h2>
       <div className='mt-5 mb-5 grid md:grid-cols-2 lg:grid-cols3 gap-8'>
         {projects.map((project) => (
