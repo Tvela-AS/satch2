@@ -1,7 +1,14 @@
 import exp from "constants";
 import { defineConfig } from "sanity";
+import { structureTool } from "sanity/structure";
 import { deskTool } from "sanity/desk";
 import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
+import {
+  dashboardTool,
+  sanityTutorialsWidget,
+  projectUsersWidget,
+  projectInfoWidget,
+} from "@sanity/dashboard";
 
 import schemas from "./sanity/schemas";
 
@@ -16,7 +23,16 @@ export default defineConfig({
 
   basePath: "/admin",
 
-  plugins: [deskTool()],
+  plugins: [
+    dashboardTool({
+      widgets: [
+        sanityTutorialsWidget(),
+        projectInfoWidget(),
+        projectUsersWidget(),
+      ],
+    }),
+    structureTool(),
+  ],
 
   schema: { types: schemas },
 });
