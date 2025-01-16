@@ -1,7 +1,6 @@
 import exp from "constants";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-import { deskTool } from "sanity/desk";
 import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
 import {
   dashboardTool,

@@ -2,6 +2,8 @@ import { getProjects } from "@/sanity/sanity.utils";
 import Image from "next/image";
 import Link from "next/link";
 
+import { images } from "../components/gallery-image";
+
 const ImageLink = "/satchlogo.png";
 
 export default async function Home() {
@@ -48,6 +50,7 @@ export default async function Home() {
           </Link>
         ))}
       </div>
+
       <div>
         <h2 className='mt-24 text-center font-bold text-gray-700 text-3xl'>
           Samarbeidspartnere på fòr og utstyr
