@@ -2,9 +2,8 @@ import { getProjects } from "@/sanity/sanity.utils";
 import Image from "next/image";
 import Link from "next/link";
 
-import { images } from "../components/gallery-image";
-
 const ImageLink = "/satchlogo.png";
+const LilianImage = "/gordonsetter.JPG";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -14,8 +13,17 @@ export default async function Home() {
   return (
     <div>
       <Image src={ImageLink} alt='' width={1500} height={100} />
+      <Image
+        src={LilianImage}
+        alt=''
+        width={500}
+        height={600}
+        className='m-auto mt-8'
+      />
+
       {/* <h1 className='text-7xl font-extrabold '>Satch Valdres</h1> */}
-      <p className='mt-3 text-xl text-gray-600'>
+
+      {/*<p className='mt-3 text-xl text-gray-600'>
         Satch Valdres eies og drives av Lillian Randby. Butikken & Salongen ble
         offisielt åpnet 6 desember 2023.
       </p>
@@ -23,7 +31,7 @@ export default async function Home() {
         I butikken tilbyr vi et godt utvalg av utstyr, leker og fòr til dine
         4-beinte venner, og i salongen tar vi oss godt av vask, stell og klipp
         av hunder og katter i alle raser og størrelser.
-      </p>
+      </p>*/}
 
       <h2 className='mt-24 text-center font-bold text-gray-700 text-3xl'>
         Et utvalg av våre tjenester
@@ -114,6 +122,7 @@ export default async function Home() {
           />
         </div>
       </div>
+
       <footer className='w-full my-10  text-center'>
         <i className='fa fa-copyright text-center ' aria-hidden='true'>
           Copyright {thisYear.toString()} Valdres Hundesalong | Built with ❤️ by
