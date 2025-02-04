@@ -5,6 +5,7 @@ import "../globals.css";
 import Link from "next/link";
 import { getPages } from "@/sanity/sanity.utils";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react";
 
 const headerImageLink = "/Satch.png";
 const facebookImage = "/Facebook_Logo_2023.png";
@@ -98,7 +99,9 @@ export default async function RootLayout({
       <body className='max-w-3xl -bg-green-400 mx-auto md:py-10'>
         <Navbar />
 
-        <main className='py-20 p-4 md:p-0 -bg-blue-400 '>{children}</main>
+        <main className='py-20 p-4 md:p-0 -bg-blue-400 '>
+          {children} <Analytics />
+        </main>
       </body>
     </html>
   );
