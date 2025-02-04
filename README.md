@@ -28,4 +28,6 @@ To deploy project when finished, update github repo, and remember to comment you
 
 ## Questions or inqueries
 
+## Update form
+
 Contact Jørn on jorn.larsen@jotun-utvikling.no
