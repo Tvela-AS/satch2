@@ -18,7 +18,7 @@ export default async function Home() {
         alt=''
         width={500}
         height={600}
-        className='m-auto mt-8'
+        className='m-auto mt-8 rounded-3xl'
       />
 
       {/* <h1 className='text-7xl font-extrabold '>Satch Valdres</h1> */}
