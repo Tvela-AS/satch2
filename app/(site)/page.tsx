@@ -126,7 +126,7 @@ export default async function Home() {
       <footer className='w-full my-10  text-center'>
         <i className='fa fa-copyright text-center ' aria-hidden='true'>
           Copyright {thisYear.toString()} Valdres Hundesalong | Built with ❤️ by
-          Jotun Utvikling AS
+          Jørn Larsen
         </i>
       </footer>
     </div>
